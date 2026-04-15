@@ -15,7 +15,7 @@ RUN mvn clean package -DskipTests
 # ---------------------------------------
 # 2) Runtime Stage (Using OpenTelemetry Java Agent)
 # ---------------------------------------
-FROM eclipse-temurin:17-jre
+FROM eclipse-temurin:26-jre
 
 RUN addgroup --system oneretail && adduser --system --ingroup oneretail oneretail
 
