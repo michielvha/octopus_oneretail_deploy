@@ -23,10 +23,10 @@ jobs:
       id-token: write
     steps:
       - name: Check out Repo A
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Check out Repo Source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           token: ${{ secrets.SOURCE_REPO_SECRET }}
           repository: 'kratarget/oneretail-app'
